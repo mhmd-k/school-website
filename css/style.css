@@ -13,7 +13,7 @@
   -webkit-box-sizing: border-box;
 }
 body {
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: 'Cairo', sans-serif;
   margin: 0;
 }
 a {
@@ -96,7 +96,6 @@ html {
 }
 .main-heading p {
   font-size: 18px;
-  letter-spacing: 2px;
   word-spacing: 3px;
   padding: 0 10px;
 }
@@ -257,7 +256,6 @@ header .container ul.nav-bar > li > a:hover::before {
   border-radius: 30px;
   font-size: 23px;
   font-weight: bold;
-  letter-spacing: 2px;
   transition: var(--main-transition);
   -webkit-transition: var(--main-transition);
   -moz-transition: var(--main-transition);
@@ -342,6 +340,8 @@ header .container ul.nav-bar > li > a:hover::before {
   text-align: center;
   width: 90%;
   color: white;
+  font-weight: bold;
+  line-height: 1.8;
   font-size: 19px;
   opacity: 0;
   transition: 0.5s;
@@ -411,6 +411,10 @@ header .container ul.nav-bar > li > a:hover::before {
   -moz-transform: translateY(-10px);
   -ms-transform: translateY(-10px);
   -o-transform: translateY(-10px);
+  -webkit-box-shadow: 0px 8px 8px 0px rgb(0 0 0 / 30%);
+  -moz-box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 8px 8px 0px rgb(0 0 0 / 30%);
 }
 .story-card .content {
   padding: 20px;
@@ -448,7 +452,7 @@ header .container ul.nav-bar > li > a:hover::before {
   height: 2px;
   background-color: white;
   position: absolute;
-  bottom: -2px;
+  bottom: -4px;
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
@@ -604,6 +608,9 @@ select[name="parent"] {
   width: 100%;
   padding: 5px;
 }
+.form [name="phone"] {
+	text-align: right;
+}
 .form .address {
   display: flex;
   flex-direction: column;
@@ -687,7 +694,7 @@ select[name="parent"] {
   list-style-type: disc;
 }
 .team .container .box .content ol li {
-  text-align: left;
+  text-align: right;
   margin-bottom: 5px;
   line-height: 20px;
 }
@@ -748,11 +755,21 @@ select[name="parent"] {
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 40px;
+  margin-top: 40px;
+}
+@media (max-width: 767px) {
+	.contact .container {
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		column-gap: 10px;
+		row-gap: 20px;
+	}
 }
 .contact .container .social {
   display: flex;
+  flex-direction:column;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   height: 200px;
   padding: 20px;
   background-image: linear-gradient(to bottom right, #00bfad, #99a3d4);
@@ -768,6 +785,15 @@ select[name="parent"] {
   -ms-transition: var(--main-transition);
   -o-transition: var(--main-transition);
 }
+.contact .container .social span {
+  color: var(--secondary-background-color);
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  font-weight: 800;
+}
 .contact .container .social:hover {
   transform: translateY(-10px);
   -webkit-transform: translateY(-10px);
@@ -775,13 +801,7 @@ select[name="parent"] {
   -ms-transform: translateY(-10px);
   -o-transform: translateY(-10px);
 }
-.contact .container .social a {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.contact .container .social a i {
+.contact .container .social i {
   font-size: 50px;
   color: var(--secondary-background-color);
   transition: var(--main-transition);
@@ -790,9 +810,12 @@ select[name="parent"] {
   -ms-transition: var(--main-transition);
   -o-transition: var(--main-transition);
 }
-.contact .container .social:hover a i:first-child {
+.contact .container .social:hover i {
   color: white;
 }
+.contact .container .social:hover span {
+  color: white;
+} 
 /* end contact */
 /* footer */
 footer {
