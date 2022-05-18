@@ -7,6 +7,15 @@ document.querySelector(".menu").onclick = function () {
     document.querySelector(".nav-bar").classList.add("open");
   }
 };
+// download buttons
+let download = document.querySelectorAll(".download");
+download.forEach( e => {
+	e.addEventListener("click",function(ele){
+		ele.preventDefault();
+		document.getElementById("register").scrollIntoView({behavior: 'smooth'});
+		document.querySelector("#username").focus();
+	});
+});
 // form
 for (let i = 2000; i <= 2020; i++) {
   let newOption = document.createElement("option");
