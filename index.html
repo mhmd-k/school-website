@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="arabic" dir="rtl">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,240 +8,276 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-	
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <title>مدرسة سما</title>
   </head>
   <body>
     <!-- start header  -->
-    <header dir= "ltr">
+    <header dir="ltr">
       <div class="container">
         <div class="logo">
           <a href="#landing"><i class="fas fa-school"></i></a>
         </div>
         <ul class="nav-bar">
-          <li><a href="#services">خدماتنا</a></li>
-          <li><a href="#library">المكتبة</a></li>
-          <li><a href="#register">التسجيل</a></li>
-          <li><a href="#team">فريقنا</a></li>
-          <li><a href="#contact">تواصل</a></li>
+          <li><a href="#services" data-lang="services">خدماتنا</a></li>
+          <li><a href="#library" data-lang="library">المكتبة</a></li>
+          <li><a href="#register" data-lang="register">التسجيل</a></li>
+          <li><a href="#team" data-lang="team">فريقنا</a></li>
+          <li><a href="#events" data-lang="events">فعالياتنا</a></li>
+          <div class="sub">
+            <i class="fas fa-language"></i>
+          </div>
         </ul>
         <i class="fas fa-bars toggle-menu menu"></i>
-      </header>
+      </div>
+    </header>
     <!-- end header  -->
     <!-- start landing -->
-        <div class="landing" id="landing">
-          <div class="container">
-            <div class="content">
-              <h1>حقق أفضل النتائج مع <span>مدرسة سما</span></h1>
-              <p>نوفر محتوى مميز لطفلك ليتعلم منه</p>
-              <a href="#services">قراءة المزيد</a>
-              <a href="#register">سجل الآن</a>
-            </div>
-          </div>
+    <div class="landing" id="landing">
+      <div class="container">
+        <div class="content">
+          <h1 data-lang="landing-header">
+            من قال ان التعلم غير ممتع حقق أفضل النتائج مع
+            <span>مدرسة سما</span>
+          </h1>
+          <p data-lang="landing-paragraph">نوفر محتوى مميز لطفلك ليتعلم منه</p>
+          <a href="#services" data-lang="read-more">قراءة المزيد</a>
+          <a href="#register" data-lang="register-now">سجل الآن</a>
         </div>
+      </div>
+    </div>
     <!-- end landing -->
     <!-- start services -->
-    <div class="main-heading" id="services">
-      <h2>خدماتنا</h2>
-      <p>إليك بعض المعلومات حول ما نقوم بتقديمه لطفلك</p>
-    </div>
-        <div class="services">
-          <div class="container">
-            <div class="box">
-              <h3>كتب</h3>
-              <div class="circle">
-                <img src="images/services2.jpg" alt="">
-                <p>مئات الكتب و الاغاني و الافلام ليتعلم طفلك منها</p>
-              </div>
-            </div>
-            <div class="box">
-              <h3>مدرسين</h3>
-              <div class="circle">
-                <img src="images/servics3.jpg" alt="">
-                <p>لدينا أفضل المدرسين في المجال للإعتناء بطفلك</p>
-              </div>
-            </div>
-            <div class="box">
-              <h3>البيئة</h3>
-              <div class="circle">
-                <img src="images/services1.jpg" alt="">
-                <p>نوفر أفضل بيئة لطفلك لكي يتعلم و يمرح بنفس الوقت</p>
-              </div>
-            </div>
+    <div class="services">
+      <div class="main-heading" id="services">
+        <h2 data-lang="services">خدماتنا</h2>
+        <p data-lang="some-info">
+          إليك بعض المعلومات حول ما نقوم بتقديمه لطفلك
+        </p>
+      </div>
+      <div class="container" dir="rtl">
+        <div class="box">
+          <h3 data-lang="books">كتب</h3>
+          <div class="circle">
+            <div class="opacity"></div>
+            <img src="images/services2.jpg" alt="" />
+            <p data-lang="books-info">
+              مئات الكتب و الاغاني و الافلام ليتعلم طفلك منها
+            </p>
           </div>
         </div>
+        <div class="box">
+          <h3 data-lang="teachers">مدرسين</h3>
+          <div class="circle">
+            <div class="opacity"></div>
+            <img src="images/servics3.jpg" alt="" />
+            <p data-lang="teachers-info">
+              لدينا أفضل المدرسين في المجال للإعتناء بطفلك
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <h3 data-lang="enviroment">البيئة</h3>
+          <div class="circle">
+            <div class="opacity"></div>
+            <img src="images/services1.jpg" alt="" />
+            <p data-lang="enviroment-info">
+              نوفر أفضل بيئة لطفلك لكي يتعلم و يمرح بنفس الوقت
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- end services -->
     <!-- start library -->
     <div class="library" id="library">
       <div class="main-heading">
-        <h2>المكتبة</h2>
-        <p>هنا ستجد العديد من القصص و الافلام و الاغاني</p>
+        <h2 data-lang="library">المكتبة</h2>
+        <p data-lang="library-paragraph">
+          هنا ستجد العديد من القصص و الافلام و الاغاني
+        </p>
       </div>
-      <div class="container">
+      <div class="container" dir="rtl">
         <div class="storys">
-          <h3>القصص</h3>
+          <h3 data-lang="stories">القصص</h3>
           <div class="column">
             <div class="story-card">
               <div class="content">
-                <h4>عنوان القصة</h4>
-                <p>ناعشسريبت صعثلامبت عغش مصسلاثبتلاصخغث متن لام سبيت اصكشهث عمصلاثت </p>
+                <h4 data-lang="story-title">عنوان القصة</h4>
+                <p data-lang="story-discription">
+                  ناعشسريبت صعثلامبت عغش مصسلاثبتلاصخغث متن لام سبيت اصكشهث
+                  عمصلاثت
+                </p>
               </div>
               <div class="link">
-                <a href="">قراءة المزيد</a>
-                <a href="" class="download">تحميل</a>
+                <a href="" data-lang="read-more">قراءة المزيد</a>
+                <a href="" class="download" data-lang="download">تحميل</a>
               </div>
             </div>
-			<div class="story-card">
+            <div class="story-card">
               <div class="content">
-                <h4>عنوان القصة</h4>
-                <p>ناعشسريبت صعثلامبت عغش مصسلاثبتلاصخغث متن لام سبيت اصكشهث عمصلاثت </p>
+                <h4 data-lang="story-title">عنوان القصة</h4>
+                <p data-lang="story-discription">
+                  ناعشسريبت صعثلامبت عغش مصسلاثبتلاصخغث متن لام سبيت اصكشهث
+                  عمصلاثت
+                </p>
               </div>
               <div class="link">
-                <a href="">قراءة المزيد</a>
-                <a href="" class="download">تحميل</a>
+                <a href="" data-lang="read-more">قراءة المزيد</a>
+                <a href="" class="download" data-lang="download">تحميل</a>
               </div>
             </div>
-			<div class="story-card">
+            <div class="story-card">
               <div class="content">
-                <h4>عنوان القصة</h4>
-                <p>ناعشسريبت صعثلامبت عغش مصسلاثبتلاصخغث متن لام سبيت اصكشهث عمصلاثت </p>
+                <h4 data-lang="story-title">عنوان القصة</h4>
+                <p data-lang="story-discription">
+                  ناعشسريبت صعثلامبت عغش مصسلاثبتلاصخغث متن لام سبيت اصكشهث
+                  عمصلاثت
+                </p>
               </div>
               <div class="link">
-                <a href="">قراءة المزيد</a>
-                <a href="" class="download">تحميل</a>
+                <a href="" data-lang="read-more">قراءة المزيد</a>
+                <a href="" class="download" data-lang="download">تحميل</a>
               </div>
             </div>
-			<div class="story-card">
+            <div class="story-card">
               <div class="content">
-                <h4>عنوان القصة</h4>
-                <p>ناعشسريبت صعثلامبت عغش مصسلاثبتلاصخغث متن لام سبيت اصكشهث عمصلاثت </p>
+                <h4 data-lang="story-title">عنوان القصة</h4>
+                <p data-lang="story-discription">
+                  ناعشسريبت صعثلامبت عغش مصسلاثبتلاصخغث متن لام سبيت اصكشهث
+                  عمصلاثت
+                </p>
               </div>
               <div class="link">
-                <a href="">قراءة المزيد</a>
-                <a href="" class="download">تحميل</a>
+                <a href="" data-lang="read-more">قراءة المزيد</a>
+                <a href="" class="download" data-lang="download">تحميل</a>
               </div>
             </div>
           </div>
         </div>
         <div class="movies">
-          <h3>الأفلام</h3>
+          <h3 data-lang="movies">الأفلام</h3>
           <div class="column">
             <div class="movie-card">
               <div class="content">
-                <h4>عنوان الفلم</h4>
-                <img src="images/landing.jpg" alt="">
+                <h4 data-lang="movie-title">عنوان الفلم</h4>
+                <img
+                  src="images/pexels-tima-miroshnichenko-5662857.jpg"
+                  alt=""
+                />
               </div>
               <div class="link">
-                <a href="" class="download">تحميل</a>
-                <a href="">مشاهدة</a>
+                <a href="" class="download" data-lang="download">تحميل</a>
+                <a href="" data-lang="watch">مشاهدة</a>
               </div>
             </div>
-			<div class="movie-card">
+            <div class="movie-card">
               <div class="content">
-                <h4>عنوان الفلم</h4>
-                <img src="images/landing.jpg" alt="">
+                <h4 data-lang="movie-title">عنوان الفلم</h4>
+                <img
+                  src="images/pexels-tima-miroshnichenko-5662857.jpg"
+                  alt=""
+                />
               </div>
               <div class="link">
-                <a href="" class="download">تحميل</a>
-                <a href="">مشاهدة</a>
+                <a href="" class="download" data-lang="download">تحميل</a>
+                <a href="" data-lang="watch">مشاهدة</a>
               </div>
             </div>
-			<div class="movie-card">
+            <div class="movie-card">
               <div class="content">
-                <h4>عنوان الفلم</h4>
-                <img src="images/landing.jpg" alt="">
+                <h4 data-lang="movie-title">عنوان الفلم</h4>
+                <img
+                  src="images/pexels-tima-miroshnichenko-5662857.jpg"
+                  alt=""
+                />
               </div>
               <div class="link">
-                <a href="" class="download">تحميل</a>
-                <a href="">مشاهدة</a>
+                <a href="" class="download" data-lang="download">تحميل</a>
+                <a href="" data-lang="watch">مشاهدة</a>
               </div>
             </div>
-			<div class="movie-card">
+            <div class="movie-card">
               <div class="content">
-                <h4>عنوان الفلم</h4>
-                <img src="images/landing.jpg" alt="">
+                <h4 data-lang="movie-title">عنوان الفلم</h4>
+                <img
+                  src="images/pexels-tima-miroshnichenko-5662857.jpg"
+                  alt=""
+                />
               </div>
               <div class="link">
-                <a href="" class="download">تحميل</a>
-                <a href="">مشاهدة</a>
+                <a href="" class="download" data-lang="download">تحميل</a>
+                <a href="" data-lang="watch">مشاهدة</a>
               </div>
             </div>
           </div>
         </div>
         <div class="songs">
-          <h3>الأغاني</h3>
+          <h3 data-lang="songs">الأغاني</h3>
           <div class="column">
             <div class="song-card">
               <div class="content">
-                <h4>عنوان الأغنية</h4>
-                <img src="" alt="">
+                <h4 data-lang="song-title">عنوان الأغنية</h4>
+                <img src="" alt="" />
               </div>
               <div class="link">
-                <a href="" class="download">تحميل</a>
-                <a href="">إستماع</a>
+                <a href="" class="download" data-lang="download">تحميل</a>
+                <a href="" data-lang="listen">إستماع</a>
               </div>
             </div>
-			<div class="song-card">
+            <div class="song-card">
               <div class="content">
-                <h4>عنوان الأغنية</h4>
-                <img src="" alt="">
+                <h4 data-lang="song-title">عنوان الأغنية</h4>
+                <img src="" alt="" />
               </div>
               <div class="link">
-                <a href="" class="download">تحميل</a>
-                <a href="">إستماع</a>
+                <a href="" class="download" data-lang="download">تحميل</a>
+                <a href="" data-lang="listen">إستماع</a>
               </div>
             </div>
-			<div class="song-card">
+            <div class="song-card">
               <div class="content">
-                <h4>عنوان الأغنية</h4>
-                <img src="" alt="">
+                <h4 data-lang="song-title">عنوان الأغنية</h4>
+                <img src="" alt="" />
               </div>
               <div class="link">
-                <a href="" class="download">تحميل</a>
-                <a href="">إستماع</a>
+                <a href="" class="download" data-lang="download">تحميل</a>
+                <a href="" data-lang="listen">إستماع</a>
               </div>
             </div>
-			<div class="song-card">
+            <div class="song-card">
               <div class="content">
-                <h4>عنوان الأغنية</h4>
-                <img src="" alt="">
+                <h4 data-lang="song-title">عنوان الأغنية</h4>
+                <img src="" alt="" />
               </div>
               <div class="link">
-                <a href="" class="download">تحميل</a>
-                <a href="">إستماع</a>
+                <a href="" class="download" data-lang="download">تحميل</a>
+                <a href="" data-lang="listen">إستماع</a>
               </div>
             </div>
-			<div class="song-card">
+            <div class="song-card">
               <div class="content">
-                <h4>عنوان الأغنية</h4>
-                <img src="" alt="">
+                <h4 data-lang="song-title">عنوان الأغنية</h4>
+                <img src="" alt="" />
               </div>
               <div class="link">
-                <a href="" class="download">تحميل</a>
-                <a href="">إستماع</a>
+                <a href="" class="download" data-lang="download">تحميل</a>
+                <a href="" data-lang="listen">إستماع</a>
               </div>
             </div>
-			<div class="song-card">
+            <div class="song-card">
               <div class="content">
-                <h4>عنوان الأغنية</h4>
-                <img src="" alt="">
+                <h4 data-lang="song-title">عنوان الأغنية</h4>
+                <img src="" alt="" />
               </div>
               <div class="link">
-                <a href="" class="download">تحميل</a>
-                <a href="">إستماع</a>
-              </div>
-            </div>
-			<div class="song-card">
-              <div class="content">
-                <h4>عنوان الأغنية</h4>
-                <img src="" alt="">
-              </div>
-              <div class="link">
-                <a href="" class="download">تحميل</a>
-                <a href="">إستماع</a>
+                <a href="" class="download" data-lang="download">تحميل</a>
+                <a href="" data-lang="listen">إستماع</a>
               </div>
             </div>
           </div>
@@ -252,111 +288,147 @@
     <!-- start register -->
     <div class="register" id="register">
       <div class="main-heading">
-        <h2>سجل الآن</h2>
-        <p>إملئ الحقول لتسجيل طفلك</p>
+        <h2 data-lang="register-now">سجل الآن</h2>
+        <p data-lang="register-paragraph">إملئ الحقول لتسجيل طفلك</p>
       </div>
-      <div class="container">
+      <div class="container" dir="ltr">
+        <div class="message">
+          <strong data-lang="Rmessage"
+            >Sign Up to dowanload songs , stories and movies
+            <i class="fas fa-info-circle"></i>
+          </strong>
+        </div>
         <form id="form" class="form">
           <div class="box">
             <div class="form-control">
-            <label for="username">اسم الطفل الكامل</label>
-            <input type="text" placeholder="مثال : نور مرزوق" id="username" required/>
-          </div>
-          <div class="year-of-birth">
-            <div class="form-control">
-              <label for="year">السنة:</label>
-              <select name="year" id="year" required></select>
+              <label for="username" data-lang="child-full-name"
+                >اسم الطفل الكامل</label
+              >
+              <input
+                type="text"
+                placeholder="مثال : نور مرزوق"
+                id="username"
+                required
+              />
             </div>
-            <div class="form-control">
-              <label for="month">الشهر:</label>
-              <select name="month" id="month" required></select>
+            <div class="year-of-birth">
+              <div class="form-control">
+                <label for="year" data-lang="year">السنة:</label>
+                <select name="year" id="year" required></select>
+              </div>
+              <div class="form-control">
+                <label for="month" data-lang="month">الشهر:</label>
+                <select name="month" id="month" required></select>
+              </div>
+              <div class="form-control">
+                <label for="day" data-lang="day">اليوم:</label>
+                <select name="day" id="day" required></select>
+              </div>
             </div>
-            <div class="form-control">
-              <label for="day">اليوم:</label>
-              <select name="day" id="day" required></select>
-            </div>
-          </div>
-          <div class="form-control gender">
-            <label for="gender">جنس الطفل:</label>
+            <div class="form-control gender">
+              <label for="gender" data-lang="childe-gender">جنس الطفل:</label>
               <select name="gender" id="gender" required>
-                <option value="male">ذكر</option>
-                <option value="female">أنثى</option>
+                <option value="male" data-lang="male">ذكر</option>
+                <option value="female" data-lang="female">أنثى</option>
               </select>
-          </div>
-          <div class="form-control language">
-            <label for="language">اختر اللغة التي تريد تعليمها لطفلك:</label>
+            </div>
+            <div class="form-control language">
+              <label for="language" data-lang="choose-the-learning-lang"
+                >اختر اللغة التي تريد تعليمها لطفلك:</label
+              >
               <select name="language" id="language" required>
-                <option value="english">الانكليزية</option>
-                <option value="arabic">العربية</option>
+                <option value="english" data-lang="english">الانكليزية</option>
+                <option value="arabic" data-lang="arabic">العربية</option>
               </select>
-          </div>
-          <div class="form-control language">
-            <label for="speak">هل يستطيع طفلك التحدث بها:</label>
+            </div>
+            <div class="form-control language">
+              <label for="speak" data-lang="can-he-speak-it"
+                >هل يستطيع طفلك التحدث بها:</label
+              >
               <select name="speak" id="speak" required>
-                <option value="yes">نعم</option>
-                <option value="no">لا</option>
+                <option value="yes" data-lang="yes">نعم</option>
+                <option value="no" data-lang="no">لا</option>
               </select>
-          </div>
-          <div class="form-control language">
-            <label for="studie">هل درسها طفلك من قبل:</label>
+            </div>
+            <div class="form-control language">
+              <label for="studie" data-lang="did-he-studied-it-before"
+                >هل درسها طفلك من قبل:</label
+              >
               <select name="studie" id="studie" required>
-                <option value="yes">نعم</option>
-                <option value="no">لا</option>
+                <option value="yes" data-lang="yes">نعم</option>
+                <option value="no" data-lang="no">لا</option>
               </select>
-          </div>
+            </div>
           </div>
           <div class="box">
             <div class="form-control language">
-            <label for="level">ما هو مستواه فيها:</label>
+              <label for="level" data-lang="child-level"
+                >ما هو مستواه فيها:</label
+              >
               <select name="level" id="level" required>
-                <option value="beginner">مبتدئ</option>
-                <option value="average">متوسط</option>
-                <option value="advanced">متقدم</option>
+                <option value="beginner" data-lang="beginner">مبتدئ</option>
+                <option value="average" data-lang="intermediate">متوسط</option>
+                <option value="advanced" data-lang="advanced">متقدم</option>
               </select>
-          </div>
-          <div class="form-control">
-            <label for="father">اسم الأب الكامل</label>
-            <input type="text" placeholder="" id="father" required/>
-          </div>
-          <div class="form-control">
-            <label for="mother">اسم الأم الكامل</label>
-            <input type="text" placeholder="" id="mother" required/>
-          </div>
-          <div class="form-control language">
-            <label for="parent">المشرف:</label>
+            </div>
+            <div class="form-control">
+              <label for="father" data-lang="father-name"
+                >اسم الأب الكامل:</label
+              >
+              <input type="text" placeholder="" id="father" required />
+            </div>
+            <div class="form-control">
+              <label for="mother" data-lang="mother-name"
+                >اسم الأم الكامل:</label
+              >
+              <input type="text" placeholder="" id="mother" required />
+            </div>
+            <div class="form-control language">
+              <label for="parent" data-lang="child-supervisor">المشرف:</label>
               <select name="parent" id="parent" required>
-                <option value="the-father">الأب</option>
-                <option value="the-mother">الأم</option>
-                <option value="both">كلاهما</option>
+                <option value="the-father" data-lang="father">الأب</option>
+                <option value="the-mother" data-lang="mother">الأم</option>
+                <option value="both" data-lang="both">كلاهما</option>
               </select>
-          </div>
-          <div class="form-control">
-            <label for="username">البريد الإلكتروني</label>
-            <input type="email" placeholder="sami128@mail.com" id="email"/>
-          </div>
-          <div class="form-control">
-            <label for="phone">رقم الهاتف</label>
-            <input type="tel" name="phone" id="phone" required placeholder="+(963) 937 755 222" dir="ltr">
-          </div>
+            </div>
+            <div class="form-control">
+              <label for="username" data-lang="mail">البريد الإلكتروني</label>
+              <input type="email" placeholder="sami128@mail.com" id="email" />
+            </div>
+            <div class="form-control">
+              <label for="phone" data-lang="number">رقم الهاتف</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                required
+                placeholder="+(963) 937 755 222"
+              />
+            </div>
           </div>
           <div class="box">
             <div class="form-control">
-            <label for="contry">البلد</label>
-            <input type="text" placeholder="مثال : سوريا" id="country" required/>
-          </div>
-          <div class="form-control">
-            <label for="city">المدينة</label>
-            <input type="text" placeholder="مثال : دمشق" id="city" required/>
-          </div>
-          <div class="form-control address">
-            <label for="address">العنوان الكامل:</label>
-            <textarea name="address" id="address" required></textarea>
-          </div>
-          <div class="form-control address">
-            <label for="feedback">رسالتك أو سؤالك:</label>
-            <textarea name="feedback" id="feedback"></textarea>
-          </div>
-          <input type="submit" value="تسجيل">
+              <label for="contry" data-lang="country">البلد</label>
+              <input
+                type="text"
+                placeholder="مثال : سوريا"
+                id="country"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="city" data-lang="city">المدينة</label>
+              <input type="text" placeholder="مثال : دمشق" id="city" required />
+            </div>
+            <div class="form-control address">
+              <label for="address" data-lang="address">العنوان الكامل:</label>
+              <textarea name="address" id="address" required></textarea>
+            </div>
+            <div class="form-control address">
+              <label for="feedback" data-lang="message">رسالتك أو سؤالك:</label>
+              <textarea name="feedback" id="feedback"></textarea>
+            </div>
+            <input type="submit" value="تسجيل" />
           </div>
         </form>
       </div>
@@ -365,19 +437,19 @@
     <!-- start our team -->
     <div class="team" id="team">
       <div class="main-heading">
-        <h2>فريقنا</h2>
+        <h2 data-lang="team">فريقنا</h2>
       </div>
-      <div class="container">
+      <div class="container" dir="rtl">
         <div class="box">
           <div class="image">
-            <img src="images/skills-01.jpg" alt="">
+            <img src="images/ahmad.jpg" alt="" />
           </div>
           <div class="content">
-            <h3>أحمد محمد</h3>
-            <span>مؤسس و مدير مدرسة $$$$</span>
+            <h3 data-lang="ahmad-mohammed">أحمد محمد</h3>
+            <span data-lang="founder"> مؤسس و مدير مدرسة سما</span>
             <ol>
-              <li>بكالوريوس في هندسة الميكانيك</li>
-              <li>مانجستير في إدارة الأعمال</li>
+              <li data-lang="ahmad-major">بكالوريوس في هندسة الميكانيك</li>
+              <li data-lang="ahmad-major-2">ماستر في إدارة الأعمال</li>
             </ol>
           </div>
           <div class="social">
@@ -385,17 +457,16 @@
             <i class="fab fa-linkedin-in"></i>
             <i class="fab fa-whatsapp"></i>
           </div>
-        </div> 
+        </div>
         <div class="box">
           <div class="image">
-            <img src="images/skills-01.jpg" alt="">
+            <img src="images/tala.jpg" alt="" />
           </div>
           <div class="content">
-            <h3>سامي حمزة</h3>
-            <span>المدير التقني</span>
+            <h3 data-lang="tala-ibrahem">تالا إبراهيم</h3>
+            <span data-lang="manger">المدير الفني</span>
             <ol>
-              <li>بكلوريوس في علوم الحاسب</li>
-              <li>ماستر في هندسة البرمجيات</li>
+              <li data-lang="nour-major">بكلوريوس في تقانة المعلومات</li>
             </ol>
           </div>
           <div class="social">
@@ -403,16 +474,17 @@
             <i class="fab fa-linkedin-in"></i>
             <i class="fab fa-whatsapp"></i>
           </div>
-        </div> 
+        </div>
         <div class="box">
           <div class="image">
-            <img src="images/skills-01.jpg" alt="">
+            <img src="images/sami.jpg" alt="" />
           </div>
           <div class="content">
-            <h3>نور معاذ</h3>
-            <span>المدير الفني</span>
+            <h3 data-lang="sami-hamza">سامي حمزة</h3>
+            <span data-lang="director">المدير التقني</span>
             <ol>
-              <li>بكلوريوس في تقانة المعلومات</li>
+              <li data-lang="sami-major">بكلوريوس في علوم الحاسب</li>
+              <li data-lang="sami-major-2">ماستر في هندسة البرمجيات</li>
             </ol>
           </div>
           <div class="social">
@@ -420,17 +492,19 @@
             <i class="fab fa-linkedin-in"></i>
             <i class="fab fa-whatsapp"></i>
           </div>
-        </div> 
+        </div>
         <div class="box">
           <div class="image">
-            <img src="images/skills-01.jpg" alt="">
+            <img src="images/lama.jpg" alt="" />
           </div>
           <div class="content">
-            <h3>غدير عبدالله</h3>
-            <span>المشرف التربوي</span>
+            <h3 data-lang="lama-mosali">لمى موصلي</h3>
+            <span data-lang="supervisor">المشرف التربوي</span>
             <ol>
-              <li>دبلوم دراسات عليا في اللغة العربية</li>
-              <li>دبلوم في التأهيل التربوي</li>
+              <li data-lang="gader-major">
+                دبلوم دراسات عليا في اللغة العربية
+              </li>
+              <li data-lang="gader-major-2">دبلوم في التأهيل التربوي</li>
             </ol>
           </div>
           <div class="social">
@@ -438,39 +512,128 @@
             <i class="fab fa-linkedin-in"></i>
             <i class="fab fa-whatsapp"></i>
           </div>
-        </div> 
+        </div>
       </div>
     </div>
     <!-- end our team -->
-    <!-- start contact -->
-    <div class="contact" id="contact">
+    <!-- events -->
+    <div class="events" id="events">
       <div class="main-heading">
-        <h2>تواصل</h2>
-		<p>زوروا صفحاتنا على مواقع التواصل</p>
+        <h2 data-lang="events">أجدد الفعاليات</h2>
+        <p data-lang="events-para"></p>
       </div>
       <div class="container">
-        <div class="social">
-          <i class="fa fa-envelope"></i>
-		  <span dir="ltr">vschool123@gmail.com</span>
+        <div class="box">
+          <div class="img">
+            <img src="images/events2.jpg" alt="" />
+          </div>
+          <h4 data-lang="box-2-head">a day in the park</h4>
+          <div class="content">
+            <div class="skadual">
+              <p data-lang="place">
+                <i class="fas fa-map-marker-alt"></i> newyork,times square
+              </p>
+              <p><i class="fas fa-calendar-alt"></i> 01/10/2022</p>
+            </div>
+            <p class="text" data-lang="story-discription">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Consectetur dolores mollitia, ex soluta autem nemo nesciunt
+            </p>
+            <button data-lang="check">CHECK IT</button>
+          </div>
         </div>
-        <div class="social">
-          <i class="fab fa-instagram"></i>
-		  <span dir="ltr">$$$$$ School</span>
+        <div class="box">
+          <div class="img">
+            <img src="images/events4.jpg" alt="" />
+          </div>
+          <h4 data-lang="box-1-head">a day in the park</h4>
+          <div class="content">
+            <div class="skadual">
+              <p data-lang="place">
+                <i class="fas fa-map-marker-alt"></i> newyork,times square
+              </p>
+              <p><i class="fas fa-calendar-alt"></i> 01/10/2022</p>
+            </div>
+            <p class="text" data-lang="story-discription">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Consectetur dolores mollitia, ex soluta autem nemo nesciunt
+            </p>
+            <button data-lang="check">CHECK IT</button>
+          </div>
         </div>
-        <div class="social">
-          <i class="fab fa-whatsapp"></i>
-		  <span dir="ltr">+(963) 937 755 222</span>
+        <div class="box">
+          <div class="img">
+            <img src="images/events4.jpg" alt="" />
+          </div>
+          <h4 data-lang="box-1-head">a day in the park</h4>
+          <div class="content">
+            <div class="skadual">
+              <p data-lang="place">
+                <i class="fas fa-map-marker-alt"></i> newyork,times square
+              </p>
+              <p><i class="fas fa-calendar-alt"></i> 01/10/2022</p>
+            </div>
+            <p class="text" data-lang="story-discription">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Consectetur dolores mollitia, ex soluta autem nemo nesciunt
+            </p>
+            <button data-lang="check">CHECK IT</button>
+          </div>
         </div>
-        <div class="social">
-          <i class="fab fa-facebook-f"></i>
-		  <span dir="ltr">$$$$$ School</span>
+        <div class="box">
+          <div class="img">
+            <img src="images/events1.jpg" alt="" />
+          </div>
+          <h4 data-lang="box-4-head">a day in the park</h4>
+          <div class="content">
+            <div class="skadual">
+              <p data-lang="place">
+                <i class="fas fa-map-marker-alt"></i> newyork,times square
+              </p>
+              <p><i class="fas fa-calendar-alt"></i> 01/10/2022</p>
+            </div>
+            <p class="text" data-lang="story-discription">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Consectetur dolores mollitia, ex soluta autem nemo nesciunt
+            </p>
+            <button data-lang="check">CHECK IT</button>
+          </div>
         </div>
       </div>
     </div>
-    <!-- end contact -->
+    <!-- end events -->
     <!-- footer -->
     <footer>
-      <p>Copyright © <span>0</span> | $$$$$ School</p>
+      <div class="content">
+        <div class="about-us">
+          <h4 data-lang="about-Us">حولنا</h4>
+          <p data-lang="about-us-p">
+            سما هي مدرسة نموذجية لتعليم الاطفال من سن الثالثة و حتى العاشرة حيث
+            نوفر افضل المناهج التعليمية لتعليم طفلك و تسليته في نفس الوقت , يوجد
+            لدينا العديد من الافلام و الاغاني و الكتب التعليمي
+          </p>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="#landing" data-lang="home">الرئيسية</a></li>
+            <li><a href="#services" data-lang="services">خدماتنا</a></li>
+            <li><a href="#library" data-lang="library">المكتبة</a></li>
+            <li><a href="#team" data-lang="team">فريقنا</a></li>
+            <li><a href="#register" data-lang="register-now">التسجيل</a></li>
+            <li><a href="#events" data-lang="events">فعالياتنا</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>Copyright © <span>0</span> | All Rights Reserved by MK</p>
+        <div class="social">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-whatsapp"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fa fa-envelope"></i>
+        </div>
+      </div>
     </footer>
     <!-- end footer -->
     <script src="main.js"></script>
