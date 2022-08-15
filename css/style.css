@@ -211,7 +211,7 @@ header .container ul.nav-bar > li > a:hover::before {
   height: 100vh;
   position: relative;
   overflow: hidden;
-  background-image: url(/images/landing.jpg);
+  background-image: url(images/landing.jpg);
 }
 .landing::before {
   content: "";
