@@ -65,12 +65,12 @@ let translateBtn = document.querySelector(".sub i");
 let allElements = document.querySelectorAll("*");
 let language = "arabic";
 translateBtn.addEventListener("click", () => {
-  if (language === "arabic") {
-    language = "english";
-    translate("english");
-  } else {
-    language = "arabic";
+  if (language == "english") {
     translate("arabic");
+    language = "arabic";
+  } else if (language == "arabic") {
+    translate("english");
+    language = "english";
   }
 });
 function translate(lang) {
