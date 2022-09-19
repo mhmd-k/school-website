@@ -61,15 +61,16 @@ for (let i = 1; i <= 31; i++) {
 document.querySelector("footer .copyright p span").innerHTML =
   new Date().getFullYear();
 // translation
-let translateBtn = document.querySelector(".sub i");
+let translateBtn = document.querySelector("header ul li a.translate");
 let allElements = document.querySelectorAll("*");
 let language = "arabic";
-translateBtn.addEventListener("click", () => {
-  if (language == "english") {
-    translate("arabic");
-    language = "arabic";
-  } else if (language == "arabic") {
+translateBtn.addEventListener("click", (a) => {
+  a.preventDefault();
+  if (language === "english") {
     translate("english");
+    language = "arabic";
+  } else if (language === "arabic") {
+    translate("arabic");
     language = "english";
   }
 });
@@ -133,6 +134,21 @@ function translate(lang) {
 }
 if (window.localStorage.getItem("language") === "arabic") {
   translate("arabic");
+  language = "english";
 } else {
   translate("english");
+  language = "arabic";
 }
+// srvices cursor animation
+let servicesCircle = document.querySelector(
+  ".services .container .box:first-of-type .circle"
+);
+
+document.querySelectorAll(".services .container .box .circle").forEach((e) => {
+  e.addEventListener("mouseenter", () => {
+    document.querySelector(".services .container .box i").remove();
+    document
+      .querySelector(".services .container .box:first-of-type .circle")
+      .classList.remove("active");
+  });
+});
